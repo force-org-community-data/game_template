@@ -1,0 +1,14 @@
+{
+    "$schema": "https://cdn.jsdelivr.net/gh/force-org-community-data/fo_data_validator@1/schema/source-manifest.schema.json",
+    "schemaVersion": 1,
+    "expressionVersion": 1,
+    "name": "Placeholder source",
+    "description": "Placeholder data from the template. Replace it with your game (see docs/after-creating-from-the-template.md).",
+    "disclaimer": "Placeholder. Not a real game.",
+    "provides": [
+        {
+            "game": "game.json",
+            "factions": ["factions/warband.json"]
+        }
+    ]
+}
