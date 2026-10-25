@@ -13,9 +13,9 @@ This repository is a GitHub template. To start a data repo for a game:
 1. On GitHub, open this repository and click **Use this template**, then **Create a new repository**. Pick the owner and a name (for example `fo_data_<game>`), and choose Public so the app and the jsDelivr schema URLs can reach it. Leave "Include all branches" off.
    Or with the GitHub CLI:
 
-   ```bash
-   gh repo create <owner>/<new-repo> --template force-org-community-data/game_template --public --clone
-   ```
+    ```bash
+    gh repo create <owner>/<new-repo> --template force-org-community-data/game_template --public --clone
+    ```
 
 2. Clone it (the CLI command above already does) and run `npm ci && npm run validate`. It should report `0 errors`; the placeholder data is valid from day one.
 3. Follow [docs/after-creating-from-the-template.md](docs/after-creating-from-the-template.md): rename the game, replace the placeholder source, set reviewers, and re-apply the GitHub settings (branch protection, Actions, Dependabot), because templates copy files but not settings.
