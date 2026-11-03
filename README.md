@@ -2,8 +2,6 @@
 
 Community-maintained rules data for **<your game>**, in the format read by the Force Org list builder. This repository is one data source: `forceorg.json` at the root lists the game and the faction files it provides.
 
-> **Unofficial.** This project is not affiliated with or endorsed by Games Workshop or any other publisher. Contributions must be original data entry of rules values, not copied rulebook text beyond what the data format needs.
-
 > **Made from the template?** Work through [docs/after-creating-from-the-template.md](docs/after-creating-from-the-template.md) first, then delete it and this note. The data currently in the repo is a placeholder.
 
 ## Create a new data repo from this template
