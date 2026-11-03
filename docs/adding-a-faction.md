@@ -9,14 +9,25 @@
 
 ## Sub-factions
 
-A sub-faction modifies one faction (an order, regiment, sponsor). Put it in `sub-factions/<id>.json` with a `parent` naming the faction, and list it under `subFactions` in the manifest. Records that collide with the parent's replace it only when listed in `overrides`. Details: [authoring guide §6](https://github.com/force-org-community-data/fo_data_validator/blob/v1.0.0/docs/data_authoring_guide.md).
+A sub-faction modifies one faction (an order, regiment, sponsor). Put it in `sub-factions/<id>.json` with a `parent` naming the faction, and list it under `subFactions` in the manifest. Records that collide with the parent's replace it only when listed in `overrides`. Details: [authoring guide §6](https://github.com/force-org-community-data/fo_data_validator/blob/v1.6.0/docs/data_authoring_guide.md).
 
 ## Ids never change
 
 Saved army lists refer to ids. Once merged, don't rename them; add new records instead.
 
+## Beyond the basics
+
+The authoring guide covers more than the placeholder shows. Look in [section 5 of the guide](https://github.com/force-org-community-data/fo_data_validator/blob/v1.6.0/docs/data_authoring_guide.md) for:
+
+- composition blocks (how many models of each profile a unit has and how it grows)
+- how upgrade picks are controlled (`perModel` caps, `multiSelect`, `min`/`max`) and `swapFrom`
+- slots filled from another faction
+- several sub-factions per faction (sub-faction groups)
+
+Newer features need a validator version that supports them (this repo pins one in `package.json`) and a Force Org app that supports them too. The validator's [CHANGELOG](https://github.com/force-org-community-data/fo_data_validator/blob/v1.6.0/CHANGELOG.md) lists which version added each feature.
+
 ## Further reading
 
-- [Data authoring guide](https://github.com/force-org-community-data/fo_data_validator/blob/v1.0.0/docs/data_authoring_guide.md)
-- [Data schema spec](https://github.com/force-org-community-data/fo_data_validator/blob/v1.0.0/docs/specs/data_schema_spec_2026-10-17.md)
-- [Expression language spec](https://github.com/force-org-community-data/fo_data_validator/blob/v1.0.0/docs/specs/expression_language_spec_2026-10-17.md)
+- [Data authoring guide](https://github.com/force-org-community-data/fo_data_validator/blob/v1.6.0/docs/data_authoring_guide.md)
+- [Data schema spec](https://github.com/force-org-community-data/fo_data_validator/blob/v1.6.0/docs/specs/data_schema_spec_2026-10-17.md)
+- [Expression language spec](https://github.com/force-org-community-data/fo_data_validator/blob/v1.6.0/docs/specs/expression_language_spec_2026-10-17.md)
